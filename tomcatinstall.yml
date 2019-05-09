@@ -1,7 +1,7 @@
 - hosts : all
   tasks :
-   # - name  : "install java"
-    #  yum   : name=java* state=present
+    - name  : "install java"
+      yum   : name=java* state=present
 
     - name : "create directory"
       file : path=/root/tomcat  state=directory
