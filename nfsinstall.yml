@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+   - name: install a mlocate packages
+     yum: name=nfs* state=present
+   - name: start a services
+     service: name=nfs state=started
