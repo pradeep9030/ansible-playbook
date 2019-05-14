@@ -1,0 +1,7 @@
+- hosts : all
+  tasks: 
+    - name: install a samba packages
+      yum: name=samba* state=present
+    - name: start a services
+      service: name=smb state=started
+
