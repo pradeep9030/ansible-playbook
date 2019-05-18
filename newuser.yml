@@ -1,0 +1,9 @@
+- hosts: all
+  vars_files:
+    - /root/variable.yml
+  tasks:
+    - name: creating user1
+      user: name={{user_name}}reddy state=present
+    - name: creating user2
+      user: name={{user_name}}kesav state=present
+
