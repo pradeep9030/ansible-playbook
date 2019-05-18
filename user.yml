@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+  vars: 
+    - user_name : siva
+  
+    - name: creating users
+      user: name= {{user_name}}reddy state=present
+    - name: creating users 
+      user: name= {{user_name}}kesav state=present
